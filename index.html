@@ -16,28 +16,50 @@
 </head><body>
 
 <h1>Nourtra — Privacy Policy</h1>
-<p><strong>Last updated: 6 September 2026</strong></p>
+<p><strong>Last updated: 18 September 2026</strong></p>
 <p>Nourtra is a fitness and nutrition app for iPhone and Apple Watch. This policy explains exactly what the app does with your information. It is written to match how the app is actually built — the engineering rules behind it are in the project's PRIVACY_AND_SAFETY document.</p>
 <h2>The short version</h2>
-<p>Your health and fitness data stays on your device. We do not have accounts, we do not have a copy of your data, and we cannot see your workouts, your food diary, your weight or anything from Apple Health. Three things leave your device, all described below: food search text; — only if you switch it on — a summary for the AI coach along with the messages you send it; and a pseudonymous per-device code used solely to protect the coach service from abuse.</p>
-<h2>What stays on your device, always</h2>
+<p>Your health and fitness data stays yours. We do not have accounts, we do not have a copy of your data, and we cannot see your workouts, your food diary, your weight or anything from Apple Health. The app keeps its data on your iPhone. If you switch on iCloud sync — it is <strong>off unless you turn it on</strong> — it also keeps a copy in <strong>your own iCloud account</strong>, so a reinstall or a new iPhone gets it back. That is Apple's private storage for you, not a server of ours, and nothing read from Apple Health is ever put there. The health questions the app asks you — including the checklist of long-term conditions — never leave your phone at all: not to us, not to iCloud, not to the AI coach. Three other things do leave your device to reach a service, all described below: food search text; — only if you switch it on — a summary for the AI coach, which includes what you logged as food, along with the messages you send it; and a pseudonymous per-device code used solely to protect the coach service from abuse.</p>
+<h2>What stays with you, always</h2>
 <ul>
 <li>Your profile, goal, schedule, equipment and preferences</li>
 <li>Your workouts and every logged set</li>
 <li>Your food diary and saved meals</li>
-<li>Your weight, measurements and any vitals read from Apple Health</li>
+<li>The weights and measurements you type in</li>
 <li>Calculated figures: calorie targets, trends, readiness, recovery</li>
 </ul>
-<p>These are stored in the app's own database on your iPhone and Apple Watch, and — where you have given permission — mirrored into Apple Health, which is your relationship with Apple, not with us. None of it is uploaded to us. There is no cloud backup of it on our side, because there is no account to attach it to.</p>
+<p>These are stored in the app's own database on your iPhone and Apple Watch, and — where you have given permission — mirrored into Apple Health, which is your relationship with Apple, not with us. None of it is uploaded to us. There is no copy on our side, because there is no account to attach it to.</p>
+<h2>Your health answers stay on this phone, and only this phone</h2>
+<p>The app asks a short set of health questions: the standard pre-exercise screening questions, whether you have noticed certain symptoms recently, and a yes/no checklist of long-term conditions such as high blood pressure, diabetes or a kidney condition. It asks these so the plan can be safe for you — a kidney answer caps your protein target, an uncontrolled blood-pressure answer stops the plan asking for hard efforts, and so on.</p>
+<p>We deliberately do not ask <strong>what</strong> any condition is, <strong>which medicines</strong> you take, or anything a doctor would write down. Yes or no is the whole answer.</p>
+<p>Those answers are held in a single file on your iPhone and are treated differently from everything else in this policy:</p>
+<ul>
+<li>they are <strong>never</strong> put in iCloud, even when you have iCloud sync switched on;</li>
+<li>they are <strong>never</strong> included in anything sent to the AI coach — when a condition makes your plan more careful, the coach is told only that the plan is being careful, never why;</li>
+<li>they are <strong>never</strong> sent to us, because there is nowhere on our side to send them;</li>
+<li>you can erase them at any time, from the same screen that asks them, and erasing deletes the file rather than blanking it.</li>
+</ul>
+<p>Your answers about your daily life — your usual sleep and wake times, how many hours you sit, and the days you can train — are kept in the same place and used to shape your plan.</p>
+<h2>Your iCloud account</h2>
+<p>iCloud sync is <strong>off until you turn it on</strong>, in Settings → Your data. Leave it off and nothing ever leaves your iPhone. Turn it on and the app keeps the data listed above in your own iCloud account (Apple's "private database" for this app), so that deleting and reinstalling Nourtra, or moving to a new iPhone, brings it back. This is between you and Apple: it is encrypted to your Apple ID, we hold no key to it, and we have no way to read it. Two things are deliberately <strong>never</strong> placed in iCloud by Nourtra:</p>
+<ul>
+<li>anything read from Apple Health — your vitals, and any body value the app filled in from Health rather than from your own typing (those stay on the iPhone that read them);</li>
+<li>your AI-coach consent and other per-device settings, which are asked again on a new device.</li>
+</ul>
+<p>If you switch sync off again, new changes stay on your iPhone, and the copy already in your iCloud stays in your account until you remove it there (iOS Settings → your name → iCloud). If you are not signed in to iCloud, or turn iCloud off for Nourtra in iOS Settings, the app simply keeps everything on the device. Turning iCloud off for Nourtra in iOS Settings follows Apple's standard behaviour for apps that use iCloud: the copy on that device may be cleared, and comes back from your iCloud when you turn it on again.</p>
 <h2>What leaves your device</h2>
 <p><strong>1. Food search text and barcodes.</strong> When you search for a food or scan a barcode, that search text or barcode number is sent to Open Food Facts and to a lookup service we operate that relays queries to the USDA food database. These requests carry no name, no account, no device identifier and no health information — only what you typed or scanned. We do not retain them.</p>
-<p><strong>2. The AI coach — only if you turn it on.</strong> The coach is <strong>off by default</strong>. Before it can be enabled you are shown a consent screen listing the exact fields that would be sent. If you enable it, the app sends a small set of derived numbers — for example your goal, how many sessions you completed this week, your calorie target, and body basics you typed in yourself — to our server, which relays them to Anthropic's Claude API to produce a reply. Messages you deliberately send the coach also travel: a question you type or dictate, and a program you paste to import. It never sends raw Apple Health records, your food diary, or your name. Nothing is retained on our server beyond the moment of the request. You can turn the coach off at any time, and the rest of the app works exactly the same without it.</p>
+<p><strong>2. The AI coach — only if you turn it on.</strong> The coach is <strong>off by default</strong>. Before it can be enabled you are shown a consent screen listing the exact fields that would be sent, and the app can show you the full request as it is actually assembled. If you enable it, the app sends a small set of derived numbers — for example your goal, how many sessions you completed this week, your calorie target, and body basics you typed in yourself — to our server, which relays them to Anthropic's Claude API to produce a reply. Messages you deliberately send the coach also travel: a question you type or dictate, and a program you paste to import.</p>
+<p><strong>What it sends about your eating.</strong> A coach that cannot see what you eat cannot advise on it, so the coach does receive what you logged as food: today's dishes with their calories, the dish names in a diet plan it wrote for you, and a fourteen-day summary of your diary — how many days you logged, your average calories and protein on those days, how they land against your target, which meals you tend to skip, and the dishes you eat most often. These are dish names and numbers you entered or the app calculated. It does not send food photos, your notes, or anything read from Apple Health, and it never sends your name.</p>
+<p>Nothing is retained on our server beyond the moment of the request. You can turn the coach off at any time, and the rest of the app works exactly the same without it.</p>
 <p><strong>3. A pseudonymous device code, for abuse protection only.</strong> Coach requests carry a one-way scrambled code derived from your device (it contains no personal information and cannot be reversed into anything about you). Our server uses it solely to limit how many requests each device can make per hour, keeping the service available. It is stored only as short-lived hourly counters, is never linked to your identity or health data, and is never used for tracking or advertising.</p>
 <p><strong>Voice stays on the phone.</strong> If you dictate to the coach, your speech is transcribed <strong>on this device only</strong> — the microphone audio never leaves your phone, and the feature simply does not appear on devices that cannot transcribe your language locally. The transcribed text is shown to you first; only what you choose to send is sent.</p>
 <p>Content suggesting a medical emergency or an eating disorder is detected on your device and is <strong>not</strong> sent anywhere; the app shows guidance to seek professional help instead.</p>
 <h2>What we never do</h2>
 <ul>
 <li>We never sell or share your data.</li>
+<li>We never send your answers about long-term conditions anywhere — not to us, not to iCloud, not to the AI coach.</li>
+<li>We never ask which medicines you take, and we never record a diagnosis.</li>
 <li>We never use your health or fitness data for advertising or marketing.</li>
 <li>There are no third-party analytics SDKs, no advertising identifiers, and no tracking.</li>
 <li>We never write invented or estimated measurements into Apple Health.</li>
@@ -45,15 +67,21 @@
 <h2>Apple Health</h2>
 <p>The app asks for Health permissions one feature at a time, with a plain-language explanation before each request, and you can grant any subset. Declining leaves the app fully usable — features that need data you have not shared simply stay hidden. You can change or revoke these permissions at any time in the Health app.</p>
 <h2>Your control over your data</h2>
-<p>- <strong>Export:</strong> Settings offers a full export of your app data as a JSON file. - <strong>Delete:</strong> you can delete individual records, or erase everything — which also removes the entries Nourtra wrote into Apple Health. - <strong>No account to close:</strong> because we hold nothing, there is nothing for you to ask us to delete.</p>
+<ul>
+<li><strong>Export:</strong> Settings offers a full export of your app data as a JSON file.</li>
+<li><strong>Delete:</strong> you can delete individual records, or erase everything — which also removes the entries Nourtra wrote into Apple Health and, if sync is on, the copy in your iCloud account.</li>
+<li><strong>No account to close:</strong> because we hold nothing, there is nothing for you to ask us to delete.</li>
+</ul>
 <h2>Children</h2>
 <p>Nourtra is intended for adults. Onboarding asks you to confirm you are 18 or older.</p>
 <h2>This is not medical advice</h2>
 <p>Nourtra is a wellness app. It does not diagnose, treat, or monitor any disease or injury. Calorie burn, readiness and similar figures are estimates and are labelled as estimates in the app. Talk to a qualified professional before making significant changes to how you train or eat, and especially if you have any medical condition.</p>
 <h2>Egypt — Law 151/2020</h2>
 <p>Health data is sensitive personal data under Egypt's Personal Data Protection Law. Because processing happens on your own device and we do not receive or store your health data, we do not hold it as a controller. The AI coach, when you enable it, makes us a momentary processor of the derived figures listed above — with your explicit in-app consent, with no identifiers attached, and with no retention.</p>
+<p>Your answers to the health questions — the conditions checklist in particular — are the most sensitive thing the app holds, and they are the clearest case of this: they are processed only by the app on your own phone, they are never transmitted to us or to any service we use, and they are never placed in iCloud. Nobody but you can read them.</p>
 <h2>Changes</h2>
 <p>If this policy changes in a way that affects what leaves your device, the app will tell you before the change takes effect.</p>
 <h2>Contact</h2>
 <p>Questions about privacy: <strong>ghobashy80@hotmail.com</strong></p>
+
 </body></html>
